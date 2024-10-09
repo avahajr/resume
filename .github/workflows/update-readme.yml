@@ -25,6 +25,6 @@ jobs:
         cd remote-repo
         git add README.md
         git commit -m "Update README.md from resume repository"
-        git push https://<YOUR_PERSONAL_ACCESS_TOKEN>@github.com/avahajr/avahajr.git main
+        git push https://{{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.git main
       env:
         YOUR_PERSONAL_ACCESS_TOKEN: ${{ secrets.UPDATE_README }}
