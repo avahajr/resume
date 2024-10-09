@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/update-readme.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/update-readme.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="don't overwrite global README" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,11 +88,24 @@
       <workItem from="1728487211691" duration="4922000" />
       <workItem from="1728496521044" duration="1805000" />
       <workItem from="1728505688505" duration="1717000" />
-      <workItem from="1728507761663" duration="5306000" />
+      <workItem from="1728507761663" duration="5988000" />
     </task>
+    <task id="LOCAL-00001" summary="don't overwrite global README">
+      <option name="closed" value="true" />
+      <created>1728514710996</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728514710998</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="don't overwrite global README" />
+    <option name="LAST_COMMIT_MESSAGE" value="don't overwrite global README" />
   </component>
 </project>
