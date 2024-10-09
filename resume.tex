@@ -1,0 +1,234 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%\input{glyphtounicode}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\relevantCourseWorkAndGPA}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{Selected courses: \small#1} & \textbf{\small GPA: #2/4.0} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+\textbf{\Huge \scshape Ava Hajratwala} \\ \vspace{1pt}
+\small (734) 883-2944 $|$ \href{mailto:avahajr@gmail.com}{\underline{avahajr@gmail.com}} $|$
+\href{https://linkedin.com/in/avahajr}{\underline{linkedin.com/in/avahajr}} $|$
+{\faGithub} \href{https://github.com/avahajr}{\underline{avahajr}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Barnard College, Columbia University}{New York, New York}
+{Bachelor of Arts in Computer Science}{Sept. 2021 -- Dec. 2024}
+\relevantCourseWorkAndGPA{Design for Generative AI, Entrepreneurship, NLP}{3.8}
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: Python, Java, JavaScript/TypeScript, C, C++, C\#, SQL (MySQL), HTML, CSS, Haskell} \\
+\textbf{Frameworks}{: React, Node.js, Flask, JUnit } \\
+\textbf{Developer Tools}{: Git, Docker, VS Code, Postman, PyCharm, IntelliJ} \\
+\textbf{Libraries}{: NumPy, OpenCV, pandas, Matplotlib, WebAudio}
+}}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Full-stack Developer}{Sept. 2024 -- Present}
+{WBAR Radio}{New York, NY}
+\resumeItemListStart
+\resumeItem{Designed a relational database to store information about radio shows}
+\resumeItem{Developed a REST API in Node.js for accessing the database using MySQL}
+\resumeItem{Translated design wireframes into React components}
+\resumeItem{Implemented login system to secure website data}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Undergraduate AI Research Lead}{May 2024 -- Present}
+{Soros Lab, Barnard College}{New York, NY}
+\resumeItemListStart
+\resumeItem{Secured a \$6,000 grant to work on a team developing novel genetic algorithms in Python}
+\resumeItem{Cut approx. 10 hours per week of test runtime by parallelizing experiment trials}
+\resumeItem{Promoted to team lead in 3 months for strong initiative, organization, and communication skills}
+\resumeItem{Taught 3 teammates to use Git and GitHub for version control and branch management}
+\resumeItem{Presented findings in a poster presentation to more than 50 academics and industry leaders}
+ \resumeItem{Currently writing a technical paper to submit to the GECCO conference in January 2025}
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+% -------------------------------------------
+
+
+\resumeSubheading
+{Computer Science Tutor}{Sept. 2023 -- Present}
+{Vagelos Computational Science Center, Barnard College}{New York, NY}
+\resumeItemListStart
+\resumeItem{Taught more than 100 students CS fundamentals including object-oriented programming and debugging}
+\resumeItem{Assisted students in completing assignments in Java, JavaScript, Python, and C}
+\resumeItem{Honed software communication skills to quickly identify software bugs and coach students on how to fix them}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Privacy Policy Helper} $|$ \emph{Python, Flask, React, Git}}{Sept. 2024 -- Present}
+\resumeItemListStart
+\resumeItem{Built a full-stack web app to help users evaluate privacy tradeoffs using OpenAI's chat API}
+\resumeItem{Conducted testing on 10 users to refine technical prototype}
+\resumeItem{Built a webscraper including the Google Search API to retrieve a privacy policy by company name}
+\resumeItem{Processed GPT output using fuzzy search to cite sources in the model's response}
+
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Pour Decisions} $|$ \emph{Flask, Figma, React}}{Jan. -- May 2024}
+\resumeItemListStart
+\resumeItem{Led frontend development of a Flask app to teach college students wine and food pairings in under 10 minutes}
+\resumeItem{Collaborated with design team to transform designs into a responsive, user-friendly interface}
+\resumeItem{Conducted 15 user interviews to gather feedback on prototypes, leading to UI improvements that boosted engagement}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Flight Simulator} $|$ \emph{C++, Fusion360, Serial, Arduino, Unity}}{Apr. -- May 2024}
+\resumeItemListStart
+\resumeItem{Developed a custom USB-C communication protocol between an ESP32 and the Unity game engine for controlling a virtual plane}
+\resumeItem{Processed analog sensor inputs in real-time to control the plane smoothly}
+\resumeItem{Rendered flight real-time flight statistics to the ESP32 screen using a low-level graphics library}
+\resumeItem{Designed and machined a custom enclosure for the electronics}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%
+
+
+%-------------------------------------------
+\end{document}
