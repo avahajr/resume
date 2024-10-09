@@ -22,6 +22,7 @@ jobs:
         run: |
           git clone https://github.com/avahajr/avahajr.git remote-repo
           cp README.md remote-repo/README.md
+          cp Ava_Hajratwala_resume_* remote-repo/
           cd remote-repo
           git add README.md
           git commit -m "Update README.md from resume repository"
