@@ -24,6 +24,6 @@ jobs:
           cp README.md remote-repo/README.md
           cp Ava_Hajratwala_resume_* remote-repo/
           cd remote-repo
-          git add README.md
+          git add README.md Ava_Hajratwala_resume_*
           git commit -m "Update README.md from resume repository"
           git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.git main
