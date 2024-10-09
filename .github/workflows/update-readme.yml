@@ -10,21 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Git
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-    - name: Copy README.md to remote repository
-      run: |
-        git clone https://github.com/avahajr/avahajr.git remote-repo
-        cp README.md remote-repo/README.md
-        cd remote-repo
-        git add README.md
-        git commit -m "Update README.md from resume repository"
-        git push https://{{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.git main
-      env:
-        YOUR_PERSONAL_ACCESS_TOKEN: ${{ secrets.UPDATE_README }}
+      - name: Copy README.md to remote repository
+        run: |
+          git clone https://github.com/avahajr/avahajr.git remote-repo
+          cp README.md remote-repo/README.md
+          cd remote-repo
+          git add README.md
+          git commit -m "Update README.md from resume repository"
+          git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.git main

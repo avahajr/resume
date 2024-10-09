@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/update-readme.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/update-readme.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <workItem from="1728487211691" duration="4922000" />
       <workItem from="1728496521044" duration="1805000" />
       <workItem from="1728505688505" duration="1717000" />
-      <workItem from="1728507761663" duration="3752000" />
+      <workItem from="1728507761663" duration="4147000" />
     </task>
     <servers />
   </component>
