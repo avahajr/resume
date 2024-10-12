@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="don't overwrite global README" />
+    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="don't overwrite global README">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2024-10-09.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2024-10-09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume.tex" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +95,11 @@
       <workItem from="1728487211691" duration="4922000" />
       <workItem from="1728496521044" duration="1805000" />
       <workItem from="1728505688505" duration="1717000" />
-      <workItem from="1728507761663" duration="5988000" />
+      <workItem from="1728507761663" duration="7323000" />
+      <workItem from="1728528284300" duration="4152000" />
+      <workItem from="1728578017962" duration="1296000" />
+      <workItem from="1728590774711" duration="66000" />
+      <workItem from="1728658554854" duration="7178000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />

@@ -21,6 +21,7 @@
 %\input{glyphtounicode}
 \usepackage{fontawesome}
 \usepackage{graphicx}
+\usepackage{xcolor}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -121,12 +122,15 @@
 
 \begin{center}
 \textbf{\Huge \scshape Ava Hajratwala} \\ \vspace{1pt}
-\small (734) 883-2944 $|$ \href{mailto:avahajr@gmail.com}{\underline{avahajr@gmail.com}} $|$
-\href{https://linkedin.com/in/avahajr}{\underline{linkedin.com/in/avahajr}} $|$
-{\faGithub} \href{https://github.com/avahajr}{\underline{avahajr}}
+\small (734) 883-2944 $|$ \href{mailto:avahajr@gmail.com}{{avahajr@gmail.com}} $|$
+\href{https://linkedin.com/in/avahajr}{\color{blue} \underline{LinkedIn}} $|$
+{\faGithub} \href{https://github.com/avahajr}{\color{blue}\underline{avahajr}}
 \end{center}
 
-
+%-----------SUMMARY-----------
+\section{Summary}
+\small Recent Columbia graduate seeking software engineering and project management roles. Strong communicator with
+a passion for learning and applying emergent technologies to solve complex business problems.
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
@@ -143,7 +147,7 @@
 \textbf{Languages}{: Python, Java, JavaScript/TypeScript, C, C++, C\#, SQL (MySQL), HTML, CSS, Haskell} \\
 \textbf{Frameworks}{: React, Node.js, Flask, JUnit } \\
 \textbf{Developer Tools}{: Git, Docker, VS Code, Postman, PyCharm, IntelliJ} \\
-\textbf{Libraries}{: NumPy, OpenCV, pandas, Matplotlib, WebAudio}
+\textbf{Libraries}{: jQuery, NumPy, OpenCV, pandas, Matplotlib, WebAudio}
 }}
 \end{itemize}
 
@@ -157,7 +161,7 @@
 \resumeItem{Designed a relational database to store information about radio shows}
 \resumeItem{Developed a REST API in Node.js for accessing the database using MySQL}
 \resumeItem{Translated design wireframes into React components}
-\resumeItem{Implemented login system to secure website data}
+\resumeItem{Designed and implemented website security permissions to prevent unauthorized access}
 
 \resumeItemListEnd
 
@@ -165,12 +169,13 @@
 {Undergraduate AI Research Lead}{May 2024 -- Present}
 {Soros Lab, Barnard College}{New York, NY}
 \resumeItemListStart
+\resumeItem{Promoted to team lead in 3 months for strong leadership, organization, and communication skills}
 \resumeItem{Secured a \$6,000 grant to work on a team developing novel genetic algorithms in Python}
 \resumeItem{Cut approx. 10 hours per week of test runtime by parallelizing experiment trials}
-\resumeItem{Promoted to team lead in 3 months for strong initiative, organization, and communication skills}
 \resumeItem{Taught 3 teammates to use Git and GitHub for version control and branch management}
 \resumeItem{Presented findings in a poster presentation to more than 50 academics and industry leaders}
- \resumeItem{Currently writing a technical paper to submit to the GECCO conference in January 2025}
+% Why? %
+\resumeItem{Currently writing a technical paper to submit to the GECCO conference in January 2025}
 \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -204,8 +209,8 @@
 \resumeItemListStart
 \resumeItem{Built a full-stack web app to help users evaluate privacy tradeoffs using OpenAI's chat API}
 \resumeItem{Conducted testing on 10 users to refine technical prototype}
-\resumeItem{Built a webscraper including the Google Search API to retrieve a privacy policy by company name}
-\resumeItem{Processed GPT output using fuzzy search to cite sources in the model's response}
+\resumeItem{Built a webscraper to retrieve a privacy policy by company name and increase model accuracy}
+\resumeItem{Processed GPT output using fuzzy search to cite sources in the model's response, increasing user trust}
 
 \resumeItemListEnd
 \resumeProjectHeading
@@ -219,10 +224,10 @@
 \resumeProjectHeading
 {\textbf{Flight Simulator} $|$ \emph{C++, Fusion360, Serial, Arduino, Unity}}{Apr. -- May 2024}
 \resumeItemListStart
-\resumeItem{Developed a custom USB-C communication protocol between an ESP32 and the Unity game engine for controlling a virtual plane}
-\resumeItem{Processed analog sensor inputs in real-time to control the plane smoothly}
-\resumeItem{Rendered flight real-time flight statistics to the ESP32 screen using a low-level graphics library}
-\resumeItem{Designed and machined a custom enclosure for the electronics}
+\resumeItem{Developed a custom USB-C protocol for ESP32 to control a virtual plane in the Unity game engine}
+\resumeItem{Processed analog sensor inputs in real-time to smooth plane handling}
+\resumeItem{Rendered real-time flight feedback to the ESP32 screen to warn pilots of crashes}
+\resumeItem{Designed and machined a custom protective enclosure for the electronics}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
