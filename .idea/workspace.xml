@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="don't overwrite global README">
+      <change afterPath="$PROJECT_DIR$/Ava_Hajratwala_resume_2024-10-15.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2024-10-09.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2024-10-09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2024-10-11.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Ava_Hajratwala_resume_2024-10-15.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2024-10-11.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume.tex" afterDir="false" />
     </list>
@@ -99,7 +99,8 @@
       <workItem from="1728528284300" duration="4152000" />
       <workItem from="1728578017962" duration="1296000" />
       <workItem from="1728590774711" duration="66000" />
-      <workItem from="1728658554854" duration="7178000" />
+      <workItem from="1728658554854" duration="7656000" />
+      <workItem from="1728958236226" duration="6682000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />
@@ -114,6 +115,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="don't overwrite global README" />

@@ -103,8 +103,14 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\conditionalVspace}[1]{%
+\ifnum\value{enumi}<\value{enumii}%
+\vspace{#1}%
+\fi
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}] \setlength{\itemsep}{7pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\conditionalVspace{7pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
@@ -129,8 +135,7 @@
 
 %-----------SUMMARY-----------
 \section{Summary}
-\small Recent Columbia graduate seeking software engineering and project management roles. Strong communicator with
-a passion for learning and applying emergent technologies to solve complex business problems.
+\small Recent Columbia graduate and proven leader passionate about learning new tech stacks and leveraging AI technologies to solve complex challenges. Seeking software engineering and project management opportunities to drive innovation and enhance user experiences.
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
@@ -158,10 +163,10 @@ a passion for learning and applying emergent technologies to solve complex busin
 {Full-stack Developer}{Sept. 2024 -- Present}
 {WBAR Radio}{New York, NY}
 \resumeItemListStart
-\resumeItem{Designed a relational database to store information about radio shows}
-\resumeItem{Developed a REST API in Node.js for accessing the database using MySQL}
-\resumeItem{Translated design wireframes into React components}
-\resumeItem{Designed and implemented website security permissions to prevent unauthorized access}
+\resumeItem{Developed a scalable REST API in Node.js with MySQL, enabling real-time access to radio show schedules, archives, and DJ information for over 500 users.}
+\resumeItem{Designed and deployed a relational database from scratch, replacing hardcoded data and streamlining data management, which improved scalability and reduced manual updates.}
+\resumeItem{Translated wireframes into reusable, dynamic React components, enhancing the user interface and accelerating feature development by 20\%}
+\resumeItem{Designed a role-based permissions system in the database, allowing DJs and executive board members to securely manage their content, enhancing workflow efficiency and user autonomy.}
 
 \resumeItemListEnd
 
@@ -172,8 +177,8 @@ a passion for learning and applying emergent technologies to solve complex busin
 \resumeItem{Promoted to team lead in 3 months for strong leadership, organization, and communication skills}
 \resumeItem{Secured a \$6,000 grant to work on a team developing novel genetic algorithms in Python}
 \resumeItem{Cut approx. 10 hours per week of test runtime by parallelizing experiment trials}
-\resumeItem{Taught 3 teammates to use Git and GitHub for version control and branch management}
-\resumeItem{Presented findings in a poster presentation to more than 50 academics and industry leaders}
+\resumeItem{Mentored 3 teammates in Git and GitHub, improving team collaboration and version control practices.}
+\resumeItem{Presented findings in a poster session to more than 50 academics and industry leaders, showcasing summer work and initiating discussions on future collaboration opportunities.}
 % Why? %
 \resumeItem{Currently writing a technical paper to submit to the GECCO conference in January 2025}
 \resumeItemListEnd
@@ -188,15 +193,15 @@ a passion for learning and applying emergent technologies to solve complex busin
 %    \resumeSubHeadingListEnd
 % -------------------------------------------
 
-
-\resumeSubheading
-{Computer Science Tutor}{Sept. 2023 -- Present}
-{Vagelos Computational Science Center, Barnard College}{New York, NY}
-\resumeItemListStart
-\resumeItem{Taught more than 100 students CS fundamentals including object-oriented programming and debugging}
-\resumeItem{Assisted students in completing assignments in Java, JavaScript, Python, and C}
-\resumeItem{Honed software communication skills to quickly identify software bugs and coach students on how to fix them}
-\resumeItemListEnd
+% ------- Tutoring Experience - Removed 10/14 -----
+%\resumeSubheading
+%{Computer Science Tutor}{Sept. 2023 -- Present}
+%{Vagelos Computational Science Center, Barnard College}{New York, NY}
+%\resumeItemListStart
+%\resumeItem{Taught more than 100 students CS fundamentals including object-oriented programming and debugging}
+%\resumeItem{Assisted students in completing assignments in Java, JavaScript, Python, and C}
+%\resumeItem{Honed software communication skills to quickly identify software bugs and coach students on how to fix them}
+%\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -208,24 +213,28 @@ a passion for learning and applying emergent technologies to solve complex busin
 {\textbf{Privacy Policy Helper} $|$ \emph{Python, Flask, React, Git}}{Sept. 2024 -- Present}
 \resumeItemListStart
 \resumeItem{Built a full-stack web app to help users evaluate privacy tradeoffs using OpenAI's chat API}
-\resumeItem{Conducted testing on 10 users to refine technical prototype}
+\resumeItem{Conducted testing on 10 users to refine technical prototype, increasing user satisfaction by 30\%}
 \resumeItem{Built a webscraper to retrieve a privacy policy by company name and increase model accuracy}
-\resumeItem{Processed GPT output using fuzzy search to cite sources in the model's response, increasing user trust}
+\resumeItem{Processed GPT output using fuzzy search to cite sources in the model's response to increase user trust in the model's answer}
 
 \resumeItemListEnd
-\resumeProjectHeading
-{\textbf{Pour Decisions} $|$ \emph{Flask, Figma, React}}{Jan. -- May 2024}
-\resumeItemListStart
-\resumeItem{Led frontend development of a Flask app to teach college students wine and food pairings in under 10 minutes}
-\resumeItem{Collaborated with design team to transform designs into a responsive, user-friendly interface}
-\resumeItem{Conducted 15 user interviews to gather feedback on prototypes, leading to UI improvements that boosted engagement}
-\resumeItemListEnd
+
+
+% ----- POUR DECISIONS (z) -----
+%\resumeItemListEnd
+%\resumeProjectHeading
+%{\textbf{Pour Decisions} $|$ \emph{Flask, Figma, React}}{Jan. -- May 2024}
+%\resumeItemListStart
+%\resumeItem{Led frontend development of a Flask app to teach college students wine and food pairings in under 10 minutes}
+%\resumeItem{Collaborated with design team to transform designs into a responsive, user-friendly interface}
+%\resumeItem{Conducted 15 user interviews to gather feedback on prototypes, leading to UI improvements that boosted engagement}
+%\resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Flight Simulator} $|$ \emph{C++, Fusion360, Serial, Arduino, Unity}}{Apr. -- May 2024}
+{\textbf{Flight Simulator} $|$ \emph{C++, Arduino, Unity, Serial, Fusion360}}{Apr. -- May 2024}
 \resumeItemListStart
 \resumeItem{Developed a custom USB-C protocol for ESP32 to control a virtual plane in the Unity game engine}
-\resumeItem{Processed analog sensor inputs in real-time to smooth plane handling}
+\resumeItem{Processed analog sensor inputs in real-time to smooth plane handling and decrease crash rate}
 \resumeItem{Rendered real-time flight feedback to the ESP32 screen to warn pilots of crashes}
 \resumeItem{Designed and machined a custom protective enclosure for the electronics}
 \resumeItemListEnd
