@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="don't overwrite global README">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume.tex" afterDir="false" />
-    </list>
+    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="don't overwrite global README" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,6 +107,7 @@
       <workItem from="1728658554854" duration="7656000" />
       <workItem from="1728958236226" duration="7052000" />
       <workItem from="1729221133799" duration="1728000" />
+      <workItem from="1731608366768" duration="555000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />

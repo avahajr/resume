@@ -21,9 +21,9 @@ jobs:
       - name: Copy README.md to remote repository
         run: |
           git clone https://github.com/avahajr/avahajr.git remote-repo
+          rm remote-repo/README.md remote-repo/Ava_Hajratwala_resume*.*
           cp Ava_Hajratwala_resume_*.pdf remote-repo/Ava_Hajratwala_resume.pdf
           cd remote-repo
-          rm Ava_Hajratwala_resume_*
           git add -A
           git commit -m "add new global resume (from resume repository)"
           git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.git main
