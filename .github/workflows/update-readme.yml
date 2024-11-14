@@ -18,11 +18,12 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: Copy README.md to remote repository
+      - name: Copy resume to remote repository
         run: |
           git clone https://github.com/avahajr/avahajr.git remote-repo
-          rm remote-repo/README.md remote-repo/Ava_Hajratwala_resume*.*
+          rm remote-repo/Ava_Hajratwala_resume*.*
           cp Ava_Hajratwala_resume_*.pdf remote-repo/Ava_Hajratwala_resume.pdf
+          cp Ava_Hajratwala_resume*.png remote-repo/Ava_Hajratwala_resume.png
           cd remote-repo
           git add -A
           git commit -m "add new global resume (from resume repository)"
