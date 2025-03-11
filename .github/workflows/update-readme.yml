@@ -26,5 +26,5 @@ jobs:
           cp Ava_Hajratwala_resume*.png remote-repo/Ava_Hajratwala_resume.png
           cd remote-repo
           git add -A
-          git commit -m "add new global resume (from resume repository)"
+          git commit -m "${{ github.event.head_commit.message }}"
           git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.git main
