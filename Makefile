@@ -1,4 +1,5 @@
 DATE := $(shell date +%Y-%m-%d)
+TIME := $(shell date +%H:%M:%S)
 PDF_FILE := Ava_Hajratwala_resume_$(DATE).pdf
 IMAGE_FILE := Ava_Hajratwala_resume_$(DATE).png
 RESUME_DIR := ~/Documents/job-apps/resume
@@ -28,7 +29,7 @@ $(IMAGE_FILE): move-around
 README.md: $(IMAGE_FILE)
 	@printf "Updating README... "
 	@echo "# Ava's resume" > README.md
-	@echo "Last updated: $(DATE)" >> README.md
+	@echo "Last updated: $(DATE) at $(TIME)" >> README.md
 	@echo "![Resume](./$(IMAGE_FILE))" >> README.md
 	@echo "[PDF Here](./$(PDF_FILE))" >> README.md
 	@printf "done.\n"
