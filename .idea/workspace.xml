@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="add &quot;.&quot; to flight sim bullets">
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-03-11.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-03-11.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-03-11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-03-11.png" afterDir="false" />
+    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="stamp readme with time">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-03-11.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-03-11.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +89,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -119,7 +121,8 @@
       <workItem from="1736964806196" duration="2512000" />
       <workItem from="1740687616753" duration="1535000" />
       <workItem from="1740689165759" duration="871000" />
-      <workItem from="1741707818192" duration="9548000" />
+      <workItem from="1741707818192" duration="11348000" />
+      <workItem from="1742573067121" duration="3801000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />
@@ -145,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741714706964</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="stamp readme with time">
+      <option name="closed" value="true" />
+      <created>1741717772058</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741717772058</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +179,8 @@
     <MESSAGE value="update makefile" />
     <MESSAGE value="add periods" />
     <MESSAGE value="add &quot;.&quot; to flight sim bullets" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &quot;.&quot; to flight sim bullets" />
+    <MESSAGE value="stamp readme with time" />
+    <option name="LAST_COMMIT_MESSAGE" value="stamp readme with time" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
