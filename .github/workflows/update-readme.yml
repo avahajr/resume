@@ -1,12 +1,37 @@
 name: Update README
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
     paths:
-      - 'Ava_Hajratwala_resume_*.pdf'
-      - 'Ava_Hajratwala_resume_*.png'
+      - '.github/workflows/update-readme.yml'
+      - 'resume.tex'
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install ghostscript
+        run: sudo apt install ghostscript
+      - name: Change ImageMagick security policy
+        run: |
+          DQT='"'
+          SRC="rights=${DQT}none${DQT} pattern=${DQT}PDF${DQT}"
+          RPL="rights=${DQT}read|write${DQT} pattern=${DQT}PDF${DQT}"
+          sudo sed -i "s/$SRC/$RPL/" /etc/ImageMagick-6/policy.xml
+
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: resume.tex
+
+      - name: Convert to PNG
+        run: |
+          mv resume.pdf Ava_Hajratwala_resume.pdf
+          convert -density 300 Ava_Hajratwala_resume.pdf -background white -alpha remove -flatten -quality 90 Ava_Hajratwala_resume.png
+
   update-github-readme:
     runs-on: ubuntu-latest
     steps:
@@ -22,7 +47,7 @@ jobs:
         run: |
           git clone https://github.com/avahajr/avahajr.git remote-repo
           rm remote-repo/Ava_Hajratwala_resume*.*
-          cp Ava_Hajratwala_resume_*.pdf remote-repo/Ava_Hajratwala_resume.pdf
+          cp Ava_Hajratwala_resume*.pdf remote-repo/Ava_Hajratwala_resume.pdf
           cp Ava_Hajratwala_resume*.png remote-repo/Ava_Hajratwala_resume.png
           cd remote-repo
           git add -A
@@ -33,20 +58,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Git
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-    - name: Copy new resume to portfolio site
-      run: |
-        git clone https://github.com/avahajr/avahajr.github.io.git portfolio-site
-        rm portfolio-site/public/Ava_Hajratwala_resume*.*
-        cp Ava_Hajratwala_resume_*.pdf portfolio-site/public/Ava_Hajratwala_resume.pdf
-        cp Ava_Hajratwala_resume*.png portfolio-site/public/Ava_Hajratwala_resume.png
-        cd portfolio-site
-        git commit -am "RESUME UPDATE - ${{ github.event.head_commit.message }}"
-        git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.github.io.git main
+      - name: Copy new resume to portfolio site
+        run: |
+          git clone https://github.com/avahajr/avahajr.github.io.git portfolio-site
+          rm portfolio-site/public/Ava_Hajratwala_resume*.*
+          cp Ava_Hajratwala_resume*.pdf portfolio-site/public/Ava_Hajratwala_resume.pdf
+          cp Ava_Hajratwala_resume*.png portfolio-site/public/Ava_Hajratwala_resume.png
+          cd portfolio-site
+          git commit -am "RESUME UPDATE - ${{ github.event.head_commit.message }}"
+          git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.github.io.git main
