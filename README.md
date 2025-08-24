@@ -1,4 +1,4 @@
 # Ava's resume
-Last updated: 2025-03-21 at 13:14:36
-![Resume](./Ava_Hajratwala_resume_2025-03-21.png)
-[PDF Here](./Ava_Hajratwala_resume_2025-03-21.pdf)
+Last updated: 2025-08-24 at 12:35:21
+![Resume](./Ava_Hajratwala_resume_2025-08-24.png)
+[PDF Here](./Ava_Hajratwala_resume_2025-08-24.pdf)
