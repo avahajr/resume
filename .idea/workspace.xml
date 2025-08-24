@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="fix filepath">
+    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="add building to pipeline">
       <change beforePath="$PROJECT_DIR$/.github/workflows/update-readme.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/update-readme.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-08-24.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-08-24.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +123,7 @@
       <workItem from="1742927104524" duration="13000" />
       <workItem from="1742928134946" duration="1744000" />
       <workItem from="1756044851897" duration="8769000" />
-      <workItem from="1756058983578" duration="3452000" />
+      <workItem from="1756058983578" duration="4219000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />
@@ -183,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756060107267</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add building to pipeline">
+      <option name="closed" value="true" />
+      <created>1756062675252</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756062675252</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +215,9 @@
     <MESSAGE value="stamp readme with time" />
     <MESSAGE value="fix yaml" />
     <MESSAGE value="fix filepath" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix filepath" />
+    <MESSAGE value="add building to pipeline...?&quot;" />
+    <MESSAGE value="add building to pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="add building to pipeline" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

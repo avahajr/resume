@@ -8,13 +8,27 @@ on:
       - '.github/workflows/update-readme.yml'
       - 'resume.tex'
 jobs:
-  build:
+  checkout-repo:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+  build:
+    needs: checkout-repo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compile LaTeX to PDF
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: resume.tex
+
       - name: Install ghostscript
         run: sudo apt install ghostscript
+
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
       - name: Change ImageMagick security policy
         run: |
           DQT='"'
@@ -22,21 +36,15 @@ jobs:
           RPL="rights=${DQT}read|write${DQT} pattern=${DQT}PDF${DQT}"
           sudo sed -i "s/$SRC/$RPL/" /etc/ImageMagick-6/policy.xml
 
-      - name: Compile LaTeX to PDF
-        uses: xu-cheng/latex-action@v4
-        with:
-          root_file: resume.tex
-
-      - name: Convert to PNG
+      - name: Convert PDF to PNG
         run: |
           mv resume.pdf Ava_Hajratwala_resume.pdf
           convert -density 300 Ava_Hajratwala_resume.pdf -background white -alpha remove -flatten -quality 90 Ava_Hajratwala_resume.png
 
   update-github-readme:
     runs-on: ubuntu-latest
+    needs: build
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
 
       - name: Set up Git
         run: |
@@ -56,11 +64,8 @@ jobs:
 
   update-portfolio-site:
     runs-on: ubuntu-latest
-
+    needs: build
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: Set up Git
         run: |
           git config --global user.name 'github-actions[bot]'
