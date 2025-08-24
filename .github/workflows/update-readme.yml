@@ -30,19 +30,22 @@ jobs:
 
     update-portfolio-site:
       runs-on: ubuntu-latest
-        - name: Checkout repository
-                 uses: actions/checkout@v2
-        - name: Set up Git
-          run: |
-            git config --global user.name 'github-actions[bot]'
-            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-        - name: Copy new resume to portfolio site
-          run: |
-            git clone https://github.com/avahajr/avahajr.github.io.git portfolio-site
-            rm portfolio-site/Ava_Hajratwala_resume*.*
-            cp Ava_Hajratwala_resume_*.pdf portfolio-site/Ava_Hajratwala_resume.pdf
-            cp Ava_Hajratwala_resume*.png portfolio-site/Ava_Hajratwala_resume.png
-            cd portfolio-site
-            git commit -am "${{ github.event.head_commit.message }}"
-            git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.github.io.git main
+      steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Copy new resume to portfolio site
+        run: |
+          git clone https://github.com/avahajr/avahajr.github.io.git portfolio-site
+          rm portfolio-site/Ava_Hajratwala_resume*.*
+          cp Ava_Hajratwala_resume_*.pdf portfolio-site/Ava_Hajratwala_resume.pdf
+          cp Ava_Hajratwala_resume*.png portfolio-site/Ava_Hajratwala_resume.png
+          cd portfolio-site
+          git commit -am "${{ github.event.head_commit.message }}"
+          git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.github.io.git main
