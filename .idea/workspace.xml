@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="try remove gs dependency, also give token to push">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/update-readme.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/update-readme.yml" afterDir="false" />
+    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="UPDATE_README -&gt; GITHUB_TOKEN">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/update-readme.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +123,7 @@
       <workItem from="1742927104524" duration="13000" />
       <workItem from="1742928134946" duration="1744000" />
       <workItem from="1756044851897" duration="8769000" />
-      <workItem from="1756058983578" duration="5608000" />
+      <workItem from="1756058983578" duration="6691000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />
@@ -213,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756064231514</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="UPDATE_README -&gt; GITHUB_TOKEN">
+      <option name="closed" value="true" />
+      <created>1756064823424</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1756064823424</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +252,8 @@
     <MESSAGE value="add building to pipeli" />
     <MESSAGE value="update readme depends on build" />
     <MESSAGE value="try remove gs dependency, also give token to push" />
-    <option name="LAST_COMMIT_MESSAGE" value="try remove gs dependency, also give token to push" />
+    <MESSAGE value="UPDATE_README -&gt; GITHUB_TOKEN" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE_README -&gt; GITHUB_TOKEN" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

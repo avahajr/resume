@@ -5,16 +5,15 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/update-readme.yml'
+      - 'deploy.yml'
       - 'resume.tex'
       - 'Ava_Hajratwala_resume*.pdf'
       - 'Ava_Hajratwala_resume*.png'
 jobs:
 
   build:
-    paths-ignore:
-      - 'Ava_Hajratwala_resume*.pdf'
-      - 'Ava_Hajratwala_resume*.png'
+    # only build if user says so
+    if: "!contains(github.event.head_commit.message, 'do-build')"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -37,8 +36,9 @@ jobs:
 
       - name: Convert PDF to PNG
         run: |
-          mv resume.pdf Ava_Hajratwala_resume.pdf
-          convert -density 300 Ava_Hajratwala_resume.pdf -background white -alpha remove -flatten -quality 90 Ava_Hajratwala_resume.png
+          DATE=$(date +'%Y-%m-%d')
+          mv resume.pdf Ava_Hajratwala_resume${DATE}.pdf
+          convert -density 300 Ava_Hajratwala_resume${DATE}.pdf -background white -alpha remove -flatten -quality 90 Ava_Hajratwala_resume${DATE}.png
 
       - name: Push built files to repo
         run: |
