@@ -43,7 +43,7 @@ jobs:
     - name: Copy new resume to portfolio site
       run: |
         git clone https://github.com/avahajr/avahajr.github.io.git portfolio-site
-        rm portfolio-site/Ava_Hajratwala_resume*.*
+        rm portfolio-site/public/Ava_Hajratwala_resume*.*
         cp Ava_Hajratwala_resume_*.pdf portfolio-site/public/Ava_Hajratwala_resume.pdf
         cp Ava_Hajratwala_resume*.png portfolio-site/public/Ava_Hajratwala_resume.png
         cd portfolio-site
