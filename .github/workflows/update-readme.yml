@@ -4,7 +4,8 @@ on:
     branches:
       - main
     paths:
-      - 'Ava_Hajratwala_resume_*.*'
+      - 'Ava_Hajratwala_resume_*.pdf'
+      - 'Ava_Hajratwala_resume_*.png'
 jobs:
   update-github-readme:
     runs-on: ubuntu-latest
