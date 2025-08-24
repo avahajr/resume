@@ -44,8 +44,8 @@ jobs:
       run: |
         git clone https://github.com/avahajr/avahajr.github.io.git portfolio-site
         rm portfolio-site/Ava_Hajratwala_resume*.*
-        cp Ava_Hajratwala_resume_*.pdf portfolio-site/Ava_Hajratwala_resume.pdf
-        cp Ava_Hajratwala_resume*.png portfolio-site/Ava_Hajratwala_resume.png
+        cp Ava_Hajratwala_resume_*.pdf portfolio-site/public/Ava_Hajratwala_resume.pdf
+        cp Ava_Hajratwala_resume*.png portfolio-site/public/Ava_Hajratwala_resume.png
         cd portfolio-site
         git commit -am "${{ github.event.head_commit.message }}"
         git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.github.io.git main
