@@ -7,9 +7,14 @@ on:
     paths:
       - '.github/workflows/update-readme.yml'
       - 'resume.tex'
+      - 'Ava_Hajratwala_resume*.pdf'
+      - 'Ava_Hajratwala_resume*.png'
 jobs:
 
   build:
+    paths-ignore:
+      - 'Ava_Hajratwala_resume*.pdf'
+      - 'Ava_Hajratwala_resume*.png'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -19,9 +24,6 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           root_file: resume.tex
-
-#      - name: Install ghostscript
-#        run: sudo apt install ghostscript
 
       - name: Install ImageMagick
         run: sudo apt-get update && sudo apt-get install -y imagemagick
