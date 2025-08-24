@@ -3,11 +3,11 @@ on:
   push:
     branches:
       - main
-
+    paths:
+      - 'Ava_Hajratwala_resume_*.*'
 jobs:
   update-github-readme:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -47,5 +47,5 @@ jobs:
         cp Ava_Hajratwala_resume_*.pdf portfolio-site/public/Ava_Hajratwala_resume.pdf
         cp Ava_Hajratwala_resume*.png portfolio-site/public/Ava_Hajratwala_resume.png
         cd portfolio-site
-        git commit -am "${{ github.event.head_commit.message }}"
+        git commit -am "RESUME UPDATE - ${{ github.event.head_commit.message }}"
         git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.github.io.git main

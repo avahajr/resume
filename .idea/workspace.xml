@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="fix yaml">
+    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="fix filepath">
       <change beforePath="$PROJECT_DIR$/.github/workflows/update-readme.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/update-readme.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,7 @@
     "Makefile Target.clean.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Rebasing main",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/ava/github/resume",
     "node.js.detected.package.eslint": "true",
@@ -122,7 +122,7 @@
       <workItem from="1742927104524" duration="13000" />
       <workItem from="1742928134946" duration="1744000" />
       <workItem from="1756044851897" duration="8769000" />
-      <workItem from="1756058983578" duration="934000" />
+      <workItem from="1756058983578" duration="1504000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />
@@ -164,7 +164,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756059877748</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix filepath">
+      <option name="closed" value="true" />
+      <created>1756060050597</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756060050597</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix filepath">
+      <option name="closed" value="true" />
+      <created>1756060107267</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756060107267</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +205,8 @@
     <MESSAGE value="add &quot;.&quot; to flight sim bullets" />
     <MESSAGE value="stamp readme with time" />
     <MESSAGE value="fix yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix yaml" />
+    <MESSAGE value="fix filepath" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix filepath" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
