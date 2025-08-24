@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="stamp readme with time">
-      <change afterPath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-08-24.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/update-readme.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/update-readme.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-03-21.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-08-24.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-03-21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +122,8 @@
       <workItem from="1742573067121" duration="4596000" />
       <workItem from="1742927104524" duration="13000" />
       <workItem from="1742928134946" duration="1744000" />
-      <workItem from="1756044851897" duration="6819000" />
+      <workItem from="1756044851897" duration="8769000" />
+      <workItem from="1756058983578" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />
