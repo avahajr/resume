@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="UPDATE_README -&gt; GITHUB_TOKEN">
+    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="add M&amp;T experience">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-08-24.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2025-08-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +125,10 @@
       <workItem from="1756044851897" duration="8769000" />
       <workItem from="1756058983578" duration="9592000" />
       <workItem from="1756424057199" duration="9188000" />
+      <workItem from="1756489763784" duration="7583000" />
+      <workItem from="1757788127818" duration="50000" />
+      <workItem from="1757788186862" duration="636000" />
+      <workItem from="1757789796295" duration="739000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />
@@ -225,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756064823424</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add M&amp;T experience">
+      <option name="closed" value="true" />
+      <created>1756594672593</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1756594672593</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +266,9 @@
     <MESSAGE value="update readme depends on build" />
     <MESSAGE value="try remove gs dependency, also give token to push" />
     <MESSAGE value="UPDATE_README -&gt; GITHUB_TOKEN" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE_README -&gt; GITHUB_TOKEN" />
+    <MESSAGE value="add M&amp;T experience`&#10;`" />
+    <MESSAGE value="add M&amp;T experience" />
+    <option name="LAST_COMMIT_MESSAGE" value="add M&amp;T experience" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
