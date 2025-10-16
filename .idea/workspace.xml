@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="add M&amp;T experience">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,8 @@
       <workItem from="1756489763784" duration="7583000" />
       <workItem from="1757788127818" duration="50000" />
       <workItem from="1757788186862" duration="636000" />
-      <workItem from="1757789796295" duration="739000" />
+      <workItem from="1757789796295" duration="1802000" />
+      <workItem from="1758069388708" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />
