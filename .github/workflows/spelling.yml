@@ -75,7 +75,6 @@ on:
 
 jobs:
   spelling:
-
     name: Check Spelling
     permissions:
       contents: read
@@ -91,12 +90,6 @@ jobs:
       # note: If you use only_check_changed_files, you do not want cancel-in-progress
       cancel-in-progress: true
     steps:
-      - name: Keep only resume.tex in workspace
-        # Adjust the path if resume.tex is in a subdirectory, e.g. 'docs/resume.tex'
-        run: |
-          git ls-files | grep -v -x 'resume.tex' | xargs -r rm -f
-          # remove empty directories (optional)
-          find . -type d -empty -delete
       - name: check-spelling
         id: spelling
         uses: check-spelling/check-spelling@main
