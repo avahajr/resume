@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="add M&amp;T experience">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2026-03-06.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ava_Hajratwala_resume_2026-03-06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume.tex" beforeDir="false" afterPath="$PROJECT_DIR$/resume.tex" afterDir="false" />
-    </list>
+    <list default="true" id="a79761cc-f723-4db5-8d17-9c1c74312d6d" name="Changes" comment="add M&amp;T experience" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,6 +167,7 @@
       <workItem from="1771373434899" duration="4520000" />
       <workItem from="1772849074736" duration="187000" />
       <workItem from="1772925343650" duration="28000" />
+      <workItem from="1776376578569" duration="793000" />
     </task>
     <task id="LOCAL-00001" summary="don't overwrite global README">
       <option name="closed" value="true" />

@@ -30,7 +30,7 @@ jobs:
           cd remote-repo
           git add -A
           git commit -m "${{ github.event.head_commit.message }}"
-          git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.git main
+          git push https://${{ secrets.UPDATE_RESUME_REFERENCES }}@github.com/avahajr/avahajr.git main
 
   update-portfolio-site:
     runs-on: ubuntu-latest
@@ -50,4 +50,4 @@ jobs:
           cp Ava_Hajratwala_resume*.png portfolio-site/public/Ava_Hajratwala_resume.png
           cd portfolio-site
           git commit -am "RESUME UPDATE - ${{ github.event.head_commit.message }}"
-          git push https://${{ secrets.UPDATE_README }}@github.com/avahajr/avahajr.github.io.git main
+          git push https://${{ secrets.UPDATE_RESUME_REFERENCES }}@github.com/avahajr/avahajr.github.io.git main
